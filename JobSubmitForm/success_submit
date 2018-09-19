@@ -1,0 +1,18 @@
+This test check success form submit
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "Иванов Иван Иванович" into the field "FIO"
+User put "mail@mail.ru" into the field "email"
+User put "8005553535" into the field "telephone"
+User put "Moscow" into the field "City"
+User choose "Продавец-консультант" in the field "Select a job"
+User check a checkbox "Я даю согласие на обработку личных данных"
+User click to button "Отправить"
+
+Result:
+Form submitted to the server
+Success message shown in place of a form

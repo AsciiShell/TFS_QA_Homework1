@@ -1,0 +1,13 @@
+This test check that incomplete form can't be submitted
+
+Preconditions:
+Given a user
+Given a job apply form
+Form is well complete and ready to submit
+
+Steps:
+User not check a checkbox "Я даю согласие на обработку личных данных"
+
+
+Result:
+Submit button is disabled

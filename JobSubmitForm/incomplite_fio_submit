@@ -1,0 +1,14 @@
+This test check that incomplete form can't be submitted
+
+Preconditions:
+Given a user
+Given a job apply form
+Form is well complete and ready to submit
+
+Steps:
+User clear the content in the field "FIO"
+Field "FIO" loose a focus
+
+Result:
+Submit button is disabled
+Field "FIO" have a message "Поле обязательное"
