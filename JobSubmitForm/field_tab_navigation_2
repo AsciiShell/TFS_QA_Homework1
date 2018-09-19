@@ -1,0 +1,12 @@
+This test check tab navigation between fields
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "mail@mail.ru" into the field "telephone"
+User press "TAB" key
+
+Result:
+User focus on "email" field

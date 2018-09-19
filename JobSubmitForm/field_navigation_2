@@ -1,0 +1,14 @@
+This test check navigation between fields
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "mail@mail.ru" into the field "email"
+User put "800" into the field "telephone"
+User put "Иванов Иван Иванович" into the field "FIO"
+User press "Enter" key
+
+Result:
+User focus on "telephone" field
