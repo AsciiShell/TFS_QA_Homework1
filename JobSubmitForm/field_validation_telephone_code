@@ -1,0 +1,11 @@
+This test check that field "telephone" must have correct city/operator code
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "7005553535" into the field "telephone"
+
+Result:
+Field "telephone" have WRONG label

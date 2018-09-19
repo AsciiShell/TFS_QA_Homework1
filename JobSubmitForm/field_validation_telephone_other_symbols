@@ -1,0 +1,11 @@
+This test check that field "telephone" must be correct filled
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "QWERTYUIOP!@#$%^&*()_" into the field "telephone"
+
+Result:
+Field "telephone" is empty

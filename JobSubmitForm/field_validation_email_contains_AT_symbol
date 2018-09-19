@@ -1,0 +1,11 @@
+This test check that field "email" must contain "@" symbol
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "myaddress_123_subdomain.example.com" into the field "email"
+
+Result:
+Field "email" have WRONG label

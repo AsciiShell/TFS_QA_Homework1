@@ -1,0 +1,11 @@
+This test check that field "FIO" with 3 words is OK
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "Иванов Иван Иванович1000" into the field "FIO"
+
+Result:
+Field "FIO" have content "Иванов Иван Иванович"

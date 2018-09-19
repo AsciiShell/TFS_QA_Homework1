@@ -1,0 +1,11 @@
+This test check that field "city" must be correct filled
+
+Preconditions:
+Given a user
+Given a job apply form
+
+Steps:
+User put "Санкт-Петербург" into the field "city"
+
+Result:
+Field "city" have OK label
