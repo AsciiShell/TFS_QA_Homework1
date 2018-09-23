@@ -1,0 +1,18 @@
+This test check that incomplete form can't be submitted
+
+Preconditions:
+Given a user
+Given a job apply form
+Generate random values:
+    NAME = ^[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+$
+    EMAIL = ^\w+@[A-Za-z0-9А-Яа-я_]+\.[A-Za-z0-9А-Яа-я_]+$
+    TELEPHONE = ^[345689][0-9]{9}$
+    CITY = ^[А-я ]+$
+    JOB = random value from select input
+list of fields:  name, email, telephone, city, job, checkbox agreement
+Steps:
+User fill all fields from list with generated values except one and stay it blank
+
+Result:
+Submit button is disabled
+Blank field have a message "Поле обязательное"
