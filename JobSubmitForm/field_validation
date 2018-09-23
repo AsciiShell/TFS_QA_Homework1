@@ -9,10 +9,11 @@ Validate FIO field
         NAME_RU_OK = ^[А-Я][а-я]+\s[А-Я][а-я]+$
         NAME_EN_FULL_OK = ^[A-Z][a-z]+\s[A-Z][a-z]+\s[A-Z][a-z]+$
         NAME_EN_OK = ^[A-Z][a-z]+\s[A-Z][a-z]+$
-        NAME_FULL_OK = ^[A-Z,А-Я][a-z,а-я]+\s[A-Z,А-Я][a-z,а-я]+\s[A-Z,А-Я][a-z,а-я]+$
-        NAME_OK = ^[A-Z,А-Я][a-z,а-я]+\s[A-Z,А-Я][a-z,а-я]+$
-        WORD_WRONG = ^[A-Z,А-Я][a-z,а-я]+$
-        SYMBOLS_WRONG = ^[^A-Z,А-Я][a-z,а-я]+[0-9]+\s[A-Z,А-Я][a-z,а-я]+[0-9]+$
+        NAME_FULL_OK = ^[A-ZА-Я][a-zа-я]+\s[A-ZА-Я][a-zа-я]+\s[A-ZА-Я][a-zа-я]+$
+        NAME_OK = ^[A-ZА-Я][a-zа-я]+\s[A-ZА-Я][a-zа-я]+$
+        NAME_WORD_WRONG = ^[A-ZА-Я][a-zа-я]+$
+        NAME_SYMBOLS_WRONG = ^[^A-ZА-Я][a-zа-я]+[0-9]+\s[A-ZА-Я][a-zа-я]+[0-9]+$
+        NAME_EMPTY_WRONG = ^\s*$
     Steps:
     User put values into the field "FIO"
 

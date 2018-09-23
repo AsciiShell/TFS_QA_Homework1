@@ -6,8 +6,8 @@ Navigation by ENTER key
     Given a job apply form
     Generate random values:
         NAME = ^[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+$
-        EMAIL = ^\w+@[A-Z,a-z,0-9,А-Я,а-я,_]+\.[A-Z,a-z,0-9,А-Я,а-я,_]+$
-        TELEPHONE = ^[3,4,5,6,8,9][0-9]{9}$
+        EMAIL = ^\w+@[A-Za-z0-9А-Яа-я_]+\.[A-Za-z0-9А-Яа-я_]+$
+        TELEPHONE = ^[345689][0-9]{9}$
         CITY = ^[А-я \-]+$
         JOB = random value from select input
         NAME_INVALID = ^[А-Я][а-я]$
@@ -29,14 +29,14 @@ Navigation by TAB key
     Given a job apply form
     Generate random values:
         NAME = ^[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+$
-        EMAIL = ^\w+@[A-Z,a-z,0-9,А-Я,а-я,_]+\.[A-Z,a-z,0-9,А-Я,а-я,_]+$
-        TELEPHONE = ^[3,4,5,6,8,9][0-9]{9}$
+        EMAIL = ^\w+@[A-Za-z0-9А-Яа-я_]+\.[A-Za-z0-9А-Яа-я_]+$
+        TELEPHONE = ^[345689][0-9]{9}$
         CITY = ^[А-я \-]+$
         JOB = random value from select input
-
+    list of fields: name, email, telephone, city, job, checkbox agreement
     Steps:
-    User fill some field with correct value
+    User fill some field from list, except checkbox, with correct value
     User press TAB key
 
     Result:
-    User focus in the next field (Order: name, email, telephone, city, job, checkbox agreement)
+    User focus in the next field of list
