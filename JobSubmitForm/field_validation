@@ -15,10 +15,10 @@ Validate FIO field
         NAME_SYMBOLS_WRONG = ^[^A-ZА-Я][a-zа-я]+[0-9]+\s[A-ZА-Я][a-zа-я]+[0-9]+$
         NAME_EMPTY_WRONG = ^\s*$
     Steps:
-    User put values into the field "FIO"
+    For each value user put it into the field "FIO"
 
     Result:
-    Field "FIO" have label equal with the end of variable name
+    Field "FIO" have label equal with the end of value name
 
 Validate email field
     Preconditions:
@@ -31,10 +31,10 @@ Validate email field
         EMAIL_WRONG_SYMBOLS_WRONG = ^.*[!#$%^&*()]+.*$
         EMAIL_EMPTY_WRONG = ^\s*$
     Steps:
-    User put values into the field "email"
+    For each value user put it into the field "email"
 
     Result:
-    Field "email" have label equal with the end of variable name
+    Field "email" have label equal with the end of value name
 
 Validate telephone field
     Preconditions:
@@ -48,10 +48,10 @@ Validate telephone field
         TEL_SYMBOLS_WRONG = ^[A-Za-zА-Яа-я!@#$%^&*()_+=\- ]*$
         TEL_EMPTY_WRONG = ^\s*$
     Steps:
-    User put values into the field "telephone"
+    For each value user put it into the field "telephone"
 
     Result:
-    Field "telephone" have label equal with the end of variable name
+    Field "telephone" have label equal with the end of value name
 
 Validate city field
     Preconditions:
@@ -62,7 +62,7 @@ Validate city field
         CITY_SYMBOLS_WRONG =  ^.*[0-9!@#$%^&*()_+]+.*$
         CITY_EMPTY_WRONG = ^\s*$
     Steps:
-    User put values into the field "city"
+    For each value user put it into the field "city"
 
     Result:
-    Field "city" have label equal with the end of variable name
+    Field "city" have label equal with the end of value name

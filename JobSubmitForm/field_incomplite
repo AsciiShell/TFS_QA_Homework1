@@ -9,6 +9,7 @@ Generate random values:
     TELEPHONE = ^[345689][0-9]{9}$
     CITY = ^[А-я ]+$
     JOB = random value from select input
+    CHECKBOX = checked
 list of fields:  name, email, telephone, city, job, checkbox agreement
 Steps:
 User fill all fields from list with generated values except one and stay it blank

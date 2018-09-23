@@ -16,9 +16,9 @@ Navigation by ENTER key
         CITY_INVALID = ^[0-9]+$
 
     Steps:
-    User fill one of field ("email", "telephone", "city") with invalid value or leave blank
+    User fill one of field ("email", "telephone", "city") with invalid value or leave it blank
     User fill other fields with correct values
-    User focus on field before invalid or blank field and press ENTER key
+    User focus on some field before invalid or blank field and press ENTER key
 
     Result:
     User focus on invalid or blank field
