@@ -34,3 +34,34 @@ Validate email field
 
     Result:
     Field "email" have label equal with the end of variable name
+
+Validate telephone field
+    Preconditions:
+    Given a user
+    Given a job apply form
+    Generate random values:
+        TEL_OK = ^[345689][0-9]{9}$
+        TEL_CODE_WRONG = ^[0127][0-9]{9}$
+        TEL_LENGTH_MIN_WRONG = ^[0-9]{9}$
+        TEL_LENGTH_MAX_WRONG = ^[0-9]{11}$
+        TEL_SYMBOLS_WRONG = ^[A-Za-zА-Яа-я!@#$%^&*()_+=\- ]*$
+        TEL_EMPTY_WRONG = ^\s*$
+    Steps:
+    User put values into the field "telephone"
+
+    Result:
+    Field "telephone" have label equal with the end of variable name
+
+Validate city field
+    Preconditions:
+    Given a user
+    Given a job apply form
+    Generate random values:
+        CITY_OK = ^[A-zА-я \-]+$
+        CITY_SYMBOLS_WRONG =  ^.*[0-9!@#$%^&*()_+]+.*$
+        CITY_EMPTY_WRONG = ^\s*$
+    Steps:
+    User put values into the field "city"
+
+    Result:
+    Field "city" have label equal with the end of variable name
