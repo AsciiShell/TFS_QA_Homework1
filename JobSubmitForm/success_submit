@@ -3,16 +3,25 @@ This test check success form submit
 Preconditions:
 Given a user
 Given a job apply form
+Generate random values:
+    NAME = ^[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+$
+    EMAIL = ^\w+@[A-Z,a-z,0-9,А-Я,а-я,_]+\.[A-Z,a-z,0-9,А-Я,а-я,_]+$
+    TELEPHONE = ^[3,4,5,6,8,9][0-9]{9}$
+    CITY = ^[А-я ]+$
+    JOB = random values from select input
 
 Steps:
-User put "Иванов Иван Иванович" into the field "FIO"
-User put "mail@mail.ru" into the field "email"
-User put "8005553535" into the field "telephone"
-User put "Moscow" into the field "City"
-User choose "Продавец-консультант" in the field "Select a job"
+User put NAME into the field "FIO"
+User put EMAIL into the field "email"
+User put TELEPHONE into the field "telephone"
+User put CITY into the field "City"
+User choose JOB in the field "Select a job"
 User check a checkbox "Я даю согласие на обработку личных данных"
 User click to button "Отправить"
 
 Result:
-Form submitted to the server
+Form submitted to the server, all fields was sent (name, email, telephone, city, job)
 Success message shown in place of a form
+
+Postconditions:
+Remove test record from database
