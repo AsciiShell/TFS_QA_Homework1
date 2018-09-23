@@ -1,0 +1,20 @@
+This test validates input fields
+
+Validate FIO field
+    Preconditions:
+    Given a user
+    Given a job apply form
+    Generate random values:
+        NAME_RU_FULL_OK = ^[А-Я][а-я]+\s[А-Я][а-я]+\s[А-Я][а-я]+$
+        NAME_RU_OK = ^[А-Я][а-я]+\s[А-Я][а-я]+$
+        NAME_EN_FULL_OK = ^[A-Z][a-z]+\s[A-Z][a-z]+\s[A-Z][a-z]+$
+        NAME_EN_OK = ^[A-Z][a-z]+\s[A-Z][a-z]+$
+        NAME_FULL_OK = ^[A-Z,А-Я][a-z,а-я]+\s[A-Z,А-Я][a-z,а-я]+\s[A-Z,А-Я][a-z,а-я]+$
+        NAME_OK = ^[A-Z,А-Я][a-z,а-я]+\s[A-Z,А-Я][a-z,а-я]+$
+        WORD_WRONG = ^[A-Z,А-Я][a-z,а-я]+$
+        SYMBOLS_WRONG = ^[^A-Z,А-Я][a-z,а-я]+[0-9]+\s[A-Z,А-Я][a-z,а-я]+[0-9]+$
+    Steps:
+    User put values into the field "FIO"
+
+    Result:
+    Field "FIO" have label equal with the end of variable name
