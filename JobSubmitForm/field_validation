@@ -18,3 +18,19 @@ Validate FIO field
 
     Result:
     Field "FIO" have label equal with the end of variable name
+
+Validate email field
+    Preconditions:
+    Given a user
+    Given a job apply form
+    Generate random values:
+        EMAIL_EN_OK = ^[A-Za-z0-9_\-.]+@[A-Za-z0-9_\-.]+\.[A-Za-z]+$
+        EMAIL_OK = ^[A-Za-z0-9А-Яа-я_\-.]+@[A-Za-z0-9А-Яа-я_\-.]+\.[A-Za-zА-Яа-я]+$
+        EMAIL_NO_AT_WRONG = ^[^@]+$
+        EMAIL_WRONG_SYMBOLS_WRONG = ^.*[!#$%^&*()]+.*$
+        EMAIL_EMPTY_WRONG = ^\s*$
+    Steps:
+    User put values into the field "email"
+
+    Result:
+    Field "email" have label equal with the end of variable name
